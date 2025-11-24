@@ -1,1 +1,272 @@
-hello
+{% extends 'main.html' %} {% load static %} {%block content%}
+
+<section class="hero-section">
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="{% static 'img/IMG01_edited.webp' %}"
+      type="image/png"
+    />
+    <source
+      media="(min-width: 500px)"
+      srcset="{% static 'img/IMG01_med.webp' %}"
+      type="image/png"
+    />
+    <source
+      media="(max-width: 499px)"
+      srcset="{% static 'img/IMG01_sm.webp' %}"
+      type="image/png"
+    />
+    <img src="{% static 'img/IMG01_edited' %}" alt="Photo of a front porch where the furniture is protected from the weather by a tarpaulin." />
+  </picture>
+  <div>
+    <h1><span class="highlight">Stop Damage. </span>Get Custom Tarps Built Today</h1>
+  <p>
+    From transport to agriculture, our tarps are built to handle the toughest
+    conditions. See why businesses trust us since 1994.
+  </p>
+  <a href="" class="cta">Request a quote</a>
+  </div>
+  
+</section>
+<main>
+  <section class="clients">
+    <h2>Clients we've worked with</h2>
+    <div class="clients-wrapper">
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+    </div>
+  </section>
+  <section class="pain-point">
+    <h2>
+      Off-the-shelf covers fail fast— our custom tarps are built to your specs,
+      tested for strength, and delivered on time.
+    </h2>
+    <p>
+      Most businesses are stuck buying cheap, off-the-shelf tarps that tear
+      within months, don’t fit their equipment, and cost them more in constant
+      replacements, downtime, and frustration. We get it—you need coverings that
+      actually hold up to harsh weather, heavy use, and industry demands. That’s
+      why we build custom PVC and canvas solutions engineered for real
+      performance, crafted in our ISO-certified factory, and backed by nearly 30
+      years of manufacturing expertise. While others sell generic products, we
+      deliver purpose-built durability, precision fit, and long-term value
+      designed around your operation—not the other way around.
+    </p>
+    <a href="">Request a quote</a>
+    <picture>
+      <source media="(min-width: )" srcset="" type="image/" />
+      <img src="" alt="" />
+    </picture>
+  </section>
+  <section class="social-proof">
+    <p><span>30 Years</span> of Manufacturing Excellence</p>
+    <p>Over <span>1,000m²</span> of Production Capacity</p>
+    <p><span>20+</span> Skilled Technicians & Craftspeople</p>
+    <p><span>ISO 9001:2015</span> Certified Facility</p>
+  </section>
+  <section class="value-prop">
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>Built to Last. Designed for You.</h3>
+      <p>
+        Our custom PVC and canvas products are engineered for durability,
+        precision, and long-term performance. Unlike generic covers, every
+        solution is crafted in our ISO 9001–certified facility, ensuring quality
+        that’s consistent, tested, and trusted.
+      </p>
+    </div>
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>Custom Fit. Zero Compromise.</h3>
+      <p>
+        We design tarps that match your exact requirements—no guessing, no gaps,
+        no wasted material. Our specialised production process ensures a perfect
+        fit that boosts protection and reduces downtime.
+      </p>
+    </div>
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>Proven Quality. Certified Confidence.</h3>
+      <p>
+        Our ISO 9001:2015 certification means every step—from ordering to
+        delivery—is backed by strict quality control. You get consistent
+        workmanship, premium materials, and unmatched reliability.
+      </p>
+    </div>
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>African-Made. Globally Trusted.</h3>
+      <p>
+        Built in our 1000m² East London factory, our solutions are trusted
+        across Southern Africa and exported to countries like Tanzania and
+        Seychelles. We deliver world-class durability with local expertise.
+      </p>
+    </div>
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>Fast, Professional, On-Site Support.</h3>
+      <p>
+        We don’t just manufacture—we maintain. Our dedicated team handles
+        installations and on-site repairs, ensuring your equipment stays
+        protected with minimal downtime.
+      </p>
+    </div>
+    <div class="value-prop-card card">
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <h3>Consistency You Can Count On.</h3>
+      <p>
+        Our tightly managed supply chain and trusted material partners guarantee
+        high-quality components in every product. This ensures a flawless
+        finish, dependable strength, and shorter lead times—every time.
+      </p>
+    </div>
+  </section>
+  <section class="value-prop2">
+    <div>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <p>On-Site Installations & Repairs Completed Weekly</p>
+    </div>
+    <div>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <p>Client Satisfaction Driven by ISO-Aligned Processes</p>
+    </div>
+    <div>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/" />
+        <img src="" alt="" />
+      </picture>
+      <p>Fast Turnaround With Consistent High-Quality</p>
+    </div>
+  </section>
+  <section class="benefits">
+    <h2>Core features that set us apart from the competition</h2>
+    <picture>
+      <source media="(min-width: )" srcset="" type="image/" />
+      <img src="" alt="" />
+    </picture>
+    <div>
+      <h3>Custom Covers Built Stronger, Made Smarter</h3>
+      <p>We engineer every tarp from scratch using premium materials and ISO-certified processes.</p>
+    </div>
+    <div>
+      <h3>Precision-Fit Protection You Won’t Replace Soon</h3>
+      <p>Our custom sizing and expert craftsmanship give you longer-lasting, better-performing covers.</p>
+    </div>
+    <div>
+      <h3>Built for Tough Conditions. Crafted for Your Needs.</h3>
+      <p>We design tarps that match your exact environment—from farms to factories.</p>
+    </div>
+    <div>
+      <h3>Quality You Feel. Durability You Rely On.</h3>
+      <p>Every product goes through strict quality control to guarantee consistent strength.</p>
+    </div>
+    <div>
+      <h3>Engineered for Efficiency. Designed for Real Work</h3>
+      <p>Our solutions reduce downtime, improve protection, and last longer.</p>
+    </div>
+    <div>
+      <a>Request a quote</a>
+    </div>
+  </section>
+  <section class="steps-container">
+    <article>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/">
+        <img src="" alt="">
+      </picture>
+      <p>Step 1</p>
+      <h4>Tell Us What You Are
+Looking for</h4>
+<p>Share your measurements, industry, and use-case. Our team guides you to the perfect solution within minutes.</p>
+    </article>
+    <article>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/">
+        <img src="" alt="">
+      </picture>
+      <p>Step 2</p>
+      <h4>We Custom-Build
+Your Cover</h4>
+<p>Using premium PVC or canvas, we manufacture your product in our ISO-certified factory for guaranteed quality.</p>
+    </article>
+    <article>
+      <picture>
+        <source media="(min-width: )" srcset="" type="image/">
+        <img src="" alt="">
+      </picture>
+      <p>Step 3</p>
+      <h4>Delivered, Installed, 
+or Ready for Pickup</h4>
+<p>Receive your finished product fast—professionally installed or collected at your convenience.</p>
+    </article>
+  </section>
+  <section class="last-call">
+    <div>
+      <p>Companies come to us because downtime is expensive—and our durable, precision-fit tarps prevent exactly that. The sooner you contact us, the faster you can protect your assets.</p>
+      <ul>
+        <li>Act early to save money, prevent damage, and boost efficiency.</li>
+        <li>Production slots fill quickly—secure your order while space is open.</li>
+        <li>You’re choosing a long-term partner, not just a product.</li>
+        <li>Temporary fixes fail fast—you deserve long-lasting protection.</li>
+        <li>Off-the-shelf tarps cost more in constant replacements and downtime.</li>    
+      </ul>
+      <a>Request a quote</a>
+    </div>
+  </section>
+</main>
+{% endblock %}

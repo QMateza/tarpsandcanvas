@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+
+/* ------ COLORS ------ */
+  --primary: #FFB000;
+  --primary-tint: #FFC84D;
+  --primary-shade: #B37B00;
+  --secondary: #F20000;
+  --secondary-tint: #F64D4D;
+  --secondary-shade: #A90000;
+  --charchoal: #333333;
+  --white: #fff;
+
+  /* ------ FONT SIZE ------ */
+  
+  --text-h1: 6.1rem;
+  --text-h2: 4.8rem;
+  --text-h3: 3.9rem;
+  --text-h4: 3.1rem;
+  --text-h5: 2.5rem;
+  --text-p: 1.6rem;
+  --text-sm: 1.3rem;
+
+  /* ------ FONT FAMILY ------ */
+
+  --FF-montserrat: "Montserrat", sans-serif;
+  --FF-inter: "Inter", sans-serif;
+
+  
+}
+
+
+/* ----------------- GLOBAL STYLES ----------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--FF-inter);
+  font-size: var(--text-p);
+  color: var(--charchoal);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--FF-montserrat);
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.highlight {
+  color: var(--primary)
+}
+
+/* ----------------- COMPONENTS ----------------- */
+.cta {  
+  display: inline-block;
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 8px;
+  color: var(--white)
+}
+/* ----------------- HEADER SECTION ----------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  height: 15vh;
+  background-color: hsla(0, 0%, 0%, 0.45);
+}
+
+.logo {
+  width: 6%;
+}
+
+.logo picture, .logo img {
+  width: 100%;
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+}
+
+/* ----------------- HERO SECTION ----------------- */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  height: 100vh;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-section picture, .hero-section img {
+  position: absolute;
+  inset: 0;  
+  width: 100%;
+  height: 100%;
+   object-fit: cover;
+  z-index: -1;
+}
+
+.hero-section div{
+  width: 70%;
+  max-width: 1000px;
+  transform: translatey(-20%);
+}
+
+.hero-section p {
+  width: 80%;
+  margin: 3rem auto;
+}
