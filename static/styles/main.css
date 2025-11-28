@@ -8,7 +8,10 @@
   --secondary-tint: #f64d4d;
   --secondary-shade: #a90000;
   --charchoal: #333333;
+
+  /* WHITES */
   --white: #fff;
+  --smoke-white: #f8f8ff;
 
   /* ------ FONT SIZE ------ */
 
@@ -46,6 +49,7 @@ body {
   font-family: var(--FF-inter);
   font-size: var(--text-p);
   color: var(--charchoal);
+  max-width: 1800px;
 }
 
 h1,
@@ -156,12 +160,6 @@ nav a {
   margin: 3rem auto;
 }
 
-/* ----------------- MAIN SECTION ----------------- */
-
-main {
-  padding: 2rem;
-}
-
 /* ----------------- CLIENT SECTION ----------------- */
 
 .clients {
@@ -176,6 +174,9 @@ main {
   display: flex;
   align-items: center;
   column-gap: 10rem;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .clients picture,
@@ -187,12 +188,18 @@ main {
 /* ----------------- PAIN POINT SECTION ----------------- */
 
 .pain-point {
+  margin: 0 auto;
+  padding: 8rem 0;
+  background-color: var(--smoke-white);
+}
+
+.pain-point-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 3rem;
+  column-gap: 5rem;
   width: 80%;
-  margin: 0 auto 5rem;
+  margin: 0 auto;
 }
 
 .pain-point-text,
@@ -200,15 +207,79 @@ main {
   flex: 1;
 }
 
+.pain-point-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.pain-point-text h2 {
+  text-align: left;
+}
+
 .pain-point-image {
   position: relative;
-  border: 1px solid red;
+  height: 50rem;
 }
 
 .pain-point-image picture,
 .pain-point-image img {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transform: translateY(-50%);
+  object-position: 10% 100%;
+  border-radius: 8px;
+}
+
+.pain-point .cta {
+  width: 29%;
+}
+
+/* ----------------- SOCIAL PROOF SECTION ----------------- */
+
+.social-proof {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--section-divider);
+  color: var(--white);
+}
+
+.social-proof picture,
+.social-proof img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.social-proof-wrapper {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-proof-wrapper p {
+  width: calc((100% / 4) - 6rem);
+}
+
+.social-proof-highlight {
+  font-weight: 600;
+  color: var(--secondary-shade);
+}
+
+.seperator {
+  width: 5px;
+  height: 50px;
+  background-color: var(--primary-tint);
 }
