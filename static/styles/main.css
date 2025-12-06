@@ -53,7 +53,7 @@ body {
 }
 
 .page-wrapper {
-  max-width: 1800px;
+  max-width: 2200px;
   margin: 0 auto;
   position: relative;
 }
@@ -105,17 +105,24 @@ a {
 
 /* ----------------- HEADER SECTION ----------------- */
 header {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   height: 15vh;
   background-color: hsla(0, 0%, 0%, 0.45);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
 }
 
 .logo {
@@ -336,10 +343,65 @@ nav a {
 }
 
 /* ----------------- SOCIAL PROOF2 SECTION ----------------- */
+.social-proof2 {
+  padding: 8rem 0;
+  background-color: var(--smoke-white);
+  margin-bottom: var(--section-divider);
+}
+
+.social-proof2-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .social-proof2 h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .social-proof2-wrapper {
   display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.social-proof2-wrapper div {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.social-proof2-wrapper picture,
+.social-proof2-wrapper img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.social-proof2-wrapper h5,
+.social-proof2-wrapper p{
+  color: var(--white);
+  z-index: 1;
+  text-align: left;
+}
+
+.social-proof2-wrapper h5 {
+  font-size: var(--text-h5);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.social-proof2-wrapper p {
+  width: 30rem;
+  font-size: var(--text-p);
 }

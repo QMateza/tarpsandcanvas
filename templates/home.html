@@ -1,37 +1,37 @@
 {% extends 'main.html' %} {% load static %} {%block content%}
 
 <section class="hero-section">
-    <picture>
-      <source
-        media="(min-width: 768px)"
-        srcset="{% static 'img/IMG01_edited.webp' %}"
-        type="image/png"
-      />
-      <source
-        media="(min-width: 500px)"
-        srcset="{% static 'img/IMG01_med.webp' %}"
-        type="image/png"
-      />
-      <source
-        media="(max-width: 499px)"
-        srcset="{% static 'img/IMG01_sm.webp' %}"
-        type="image/png"
-      />
-      <img
-        src="{% static 'img/IMG01_edited' %}"
-        alt="Photo of a front porch where the furniture is protected from the weather by a tarpaulin."
-      />
-    </picture>
-    <div>
-      <h1>
-        <span class="highlight">Stop Damage. </span>Get Custom Tarps Built Today
-      </h1>
-      <p>
-        From transport to agriculture, our tarps are built to handle the
-        toughest conditions. See why businesses trust us since 1994.
-      </p>
-      <a href="" class="cta">Request a quote</a>
-    </div>
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="{% static 'img/IMG01_edited.webp' %}"
+      type="image/png"
+    />
+    <source
+      media="(min-width: 500px)"
+      srcset="{% static 'img/IMG01_med.webp' %}"
+      type="image/png"
+    />
+    <source
+      media="(max-width: 499px)"
+      srcset="{% static 'img/IMG01_sm.webp' %}"
+      type="image/png"
+    />
+    <img
+      src="{% static 'img/IMG01_edited' %}"
+      alt="Photo of a front porch where the furniture is protected from the weather by a tarpaulin."
+    />
+  </picture>
+  <div>
+    <h1>
+      <span class="highlight">Stop Damage. </span>Get Custom Tarps Built Today
+    </h1>
+    <p>
+      From transport to agriculture, our tarps are built to handle the toughest
+      conditions. See why businesses trust us since 1994.
+    </p>
+    <a href="" class="cta">Request a quote</a>
+  </div>
 </section>
 <main>
   <section class="clients">
@@ -422,59 +422,64 @@
     </div>
   </section>
   <section class="social-proof2">
-    <h2>Your Problem, Custom-Solved.</h2>
-    <article class="social-proof2-wrapper">
-      <div>
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="{% static 'img/NEUCOAT_BEIGE.webp' %}"
-            type="image/webp"
-          />
-          <img
-            src="{% static 'img/NEUCOAT_BEIGE.jpg' %}"
-            alt="Front porche to covered by tarpaulin"
-            loading="lazy"
-            width="400"
-            height="400"
-          />
-        </picture>
-        <p>On-Site Installations & Repairs Completed Weekly</p>
-      </div>
-      <div>
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="{% static 'img/IMG15.webp' %}"
-            type="image/webp"
-          />
-          <img
-            src="{% static 'img/IMG15.jpg' %}"
-            alt="Company parking lot with tarpaulin covering"
-            loading="lazy"
-            width="400"
-            height="400"
-          />
-        </picture>
-        <p>Client Satisfaction Driven by ISO-Aligned Processes</p>
-      </div>
-      <div>
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="{% static 'img/IMG16.webp' %}"
-            type="image/webp"
-          />
-          <img
-            src="{% static 'img/IMG16.jpg' %}"
-            alt="Truck load protected with tarpaulin covering"
-            width="400"
-            height="400"
-          />
-        </picture>
-        <p>Fast Turnaround With Consistent High-Quality</p>
-      </div>
-    </article>
+    <div class="social-proof2-container">
+      <h2>Your Problem, Custom-Solved.</h2>
+      <article class="social-proof2-wrapper">
+        <div>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG22.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/NEUCOAT_BEIGE.jpg' %}"
+              alt="Front porche to covered by tarpaulin"
+              loading="lazy"
+              width="400"
+              height="400"
+            />
+          </picture>
+          <h5>On-Site Experts</h5>
+          <p>On-Site Installations & Repairs Completed Weekly</p>
+        </div>
+        <div>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG15.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG15.jpg' %}"
+              alt="Company parking lot with tarpaulin covering"
+              loading="lazy"
+              width="400"
+              height="400"
+            />
+          </picture>
+          <h5>Quality Assured</h5>
+          <p>Client Satisfaction Driven by ISO-Aligned Processes</p>
+        </div>
+        <div>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG16.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG16.jpg' %}"
+              alt="Truck load protected with tarpaulin covering"
+              width="400"
+              height="400"
+            />
+          </picture>
+          <h5>Speed & Strength</h5>
+          <p>Fast Turnaround With Consistent High-Quality</p>
+        </div>
+      </article>
+    </div>
   </section>
   <section class="benefits">
     <h2>Core features that set us apart from the competition</h2>

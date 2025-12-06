@@ -19,6 +19,10 @@
       type="image/png"
       href="{% static 'img/favicon.webp' %}"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>
       Tarp and Canvas - Affordable, heavy-duty tarps and canvas covers made for
       any industry or need.
@@ -27,31 +31,33 @@
   <body>
     <div class="page-wrapper">
       <header>
-        <picture class="logo">
-          <source
-            media="(min-width: 768px)"
-            srcset="{% static 'img/logo01_med.webp' %}"
-            type="image/png"
-          />
-          <source
-            media="(min-width: 500px)"
-            srcset="{% static 'img/logo01_sm.webp' %}"
-            type="image/png"
-          />
-          <img
-            src="{% static 'img/logo01_sm.png' %}"
-            alt="Tarps and canvas logo"
-          />
-        </picture>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <a href="" class="cta">Request a quote</a>
-        </nav>
+        <div class="header-wrapper">
+          <picture class="logo">
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/logo01_med.webp' %}"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 500px)"
+              srcset="{% static 'img/logo01_sm.webp' %}"
+              type="image/png"
+            />
+            <img
+              src="{% static 'img/logo01_sm.png' %}"
+              alt="Tarps and canvas logo"
+            />
+          </picture>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <a href="" class="cta">Request a quote</a>
+          </nav>
+        </div>
       </header>
       {%block content%} {% endblock %}
     </div>
