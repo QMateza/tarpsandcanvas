@@ -50,7 +50,12 @@ body {
   font-family: var(--FF-inter);
   font-size: var(--text-p);
   color: var(--charchoal);
+}
+
+.page-wrapper {
   max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
 }
 
 h1,
@@ -100,7 +105,11 @@ a {
 
 /* ----------------- HEADER SECTION ----------------- */
 header {
-  position: relative;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,13 +146,14 @@ nav a {
 
 /* ----------------- HERO SECTION ----------------- */
 .hero-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
   margin-bottom: var(--section-divider);
-  height: 85vh;
+  height: 100vh;
   overflow: hidden;
   color: var(--white);
   text-align: center;
@@ -326,3 +336,10 @@ nav a {
 }
 
 /* ----------------- SOCIAL PROOF2 SECTION ----------------- */
+.social-proof2 h2 {
+  margin-bottom: 4rem;
+}
+
+.social-proof2-wrapper {
+  display: flex;
+}
