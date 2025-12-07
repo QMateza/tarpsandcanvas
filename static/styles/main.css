@@ -31,7 +31,7 @@
 
   /* ------ SPACING ------ */
 
-  --section-divider: 5rem;
+  --section-divider: 6rem;
 }
 
 /* ----------------- GLOBAL STYLES ----------------- */
@@ -71,8 +71,10 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 8rem;
   color: var(--primary);
   text-align: center;
+  font-size: var(--text-h2);
 }
 
 li {
@@ -192,10 +194,6 @@ nav a {
   margin-bottom: var(--section-divider);
 }
 
-.clients h2 {
-  margin-bottom: 1rem;
-}
-
 .clients-wrapper {
   display: flex;
   align-items: center;
@@ -242,6 +240,11 @@ nav a {
 
 .pain-point-text h2 {
   text-align: left;
+  margin-bottom: 2rem;
+}
+
+.highlight-charchoal {
+  color: var(--charchoal);
 }
 
 .pain-point-image {
@@ -319,10 +322,6 @@ nav a {
   background-color: var(--white);
 }
 
-.value-prop h2 {
-  margin-bottom: 4rem;
-}
-
 .value-prop-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -365,7 +364,7 @@ nav a {
   gap: 8rem;
 }
 
-.social-proof2-wrapper div {
+.social-proof2-wrapper > div {
   position: relative;
   width: 100%;
   height: 40rem;
@@ -375,6 +374,8 @@ nav a {
   align-items: center;
   padding-bottom: 5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
+  border-radius: 8px;
 }
 
 .social-proof2-wrapper picture,
@@ -388,8 +389,7 @@ nav a {
   border-radius: 8px;
 }
 
-.social-proof2-wrapper h5,
-.social-proof2-wrapper p{
+.social-proof2-text{
   color: var(--white);
   z-index: 1;
   text-align: left;
@@ -397,8 +397,9 @@ nav a {
 
 .social-proof2-wrapper h5 {
   font-size: var(--text-h5);
-  font-weight: 500;
-  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-tint);
 }
 
 .social-proof2-wrapper p {
