@@ -342,6 +342,7 @@ nav a {
 }
 
 /* ----------------- SOCIAL PROOF2 SECTION ----------------- */
+
 .social-proof2 {
   padding: 8rem 0;
   background-color: var(--smoke-white);
@@ -374,7 +375,6 @@ nav a {
   align-items: center;
   padding-bottom: 5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  
   border-radius: 8px;
 }
 
@@ -389,7 +389,7 @@ nav a {
   border-radius: 8px;
 }
 
-.social-proof2-text{
+.social-proof2-text {
   color: var(--white);
   z-index: 1;
   text-align: left;
@@ -405,4 +405,53 @@ nav a {
 .social-proof2-wrapper p {
   width: 30rem;
   font-size: var(--text-p);
+}
+
+/* ----------------- SOCIAL PROOF2 SECTION ----------------- */
+.benefits {
+  padding: 8rem 0;
+  margin-bottom: var(--section-divider);
+}
+
+.benefits-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.benefits-wrapper-image {
+  width: 50rem;
+  height: 40rem;
+  position: relative;
+  border-radius: 8px;
+}
+
+.benefits-wrapper picture,
+.benefits-wrapper img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.benefits-wrapper-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefits-wrapper-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fa-circle-check {
+  color: var(--primary-tint);
+  font-size: var(--text-h5);
 }
