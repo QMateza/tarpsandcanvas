@@ -77,6 +77,14 @@ h2 {
   font-size: var(--text-h2);
 }
 
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: var(--text-h4);
+}
+
 li {
   list-style: none;
 }
@@ -263,10 +271,6 @@ nav a {
   border-radius: 8px;
 }
 
-.pain-point .cta {
-  width: 29%;
-}
-
 /* ----------------- SOCIAL PROOF SECTION ----------------- */
 
 .social-proof {
@@ -337,7 +341,7 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.value-prop-card h3 {
+.value-prop-card h4 {
   margin-bottom: 1rem;
 }
 
@@ -454,4 +458,58 @@ nav a {
 .fa-circle-check {
   color: var(--primary-tint);
   font-size: var(--text-h5);
+}
+
+/* ----------------- STEPS SECTION ----------------- */
+
+.steps-container {
+  padding: 8rem 0;
+  background-color: var(--smoke-white);
+  margin-bottom: var(--section-divider);
+}
+
+.steps-container h2 {
+  margin-bottom: 8rem;
+}
+
+.steps-container-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.steps-container-wrapper article {
+  width: 25%;
+  padding: 1rem 2rem 2rem;
+  background-color: var(--white);
+  border-radius: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.steps-container-wrapper-image {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  margin-bottom: 2rem;
+  /* border-radius: 0.8rem; */
+}
+
+.steps-container-wrapper-image picture,
+.steps-container-wrapper-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.steps {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--primary-tint);
+}
+
+.steps-container-wrapper h4 {
+  margin-bottom: 1rem;
 }
