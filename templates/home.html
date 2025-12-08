@@ -211,7 +211,7 @@
       <div class="pain-point-text">
         <h2>
           Stop replacing!
-          <span class="highlight-charchoal">
+          <span class="highlight-charcoal">
             Fail-proof tarps for tough work.</span
           >
         </h2>
@@ -566,7 +566,9 @@
     </div>
   </section>
   <section class="steps-container">
-    <h2><span class="highlight">How It Works:</span> Quality Made Easy</h2>
+    <h2>
+      How It Works: <span class="highlight-charcoal">Quality Made Easy</span>
+    </h2>
     <div class="steps-container-wrapper">
       <article>
         <div class="steps-container-wrapper-image">
@@ -640,42 +642,57 @@
   </section>
   <section class="last-call">
     <h2>
-      <span class="highlight">Get the Cover You Need Today.</span> Save Costs
-      Immediately.
+      Get the Cover You Need Today.<br />
+      <span class="highlight-charcoal">Save Costs Immediately.</span>
     </h2>
-    <div>
-      <p>
-        Companies come to us because downtime is expensive—and our durable,
-        precision-fit tarps prevent exactly that. The sooner you contact us, the
-        faster you can protect your assets.
-      </p>
-      <ul>
-        <li>Act early to save money, prevent damage, and boost efficiency.</li>
-        <li>
-          Production slots fill quickly—secure your order while space is open.
-        </li>
-        <li>You’re choosing a long-term partner, not just a product.</li>
-        <li>Temporary fixes fail fast—you deserve long-lasting protection.</li>
-        <li>
-          Off-the-shelf tarps cost more in constant replacements and downtime.
-        </li>
-      </ul>
-      <a>Request a quote</a>
+    <div class="last-call-wrapper">
+      <div class="last-call-wrapper-text">
+        <p>
+          Companies come to us because downtime is expensive—and our durable,
+          precision-fit tarps prevent exactly that. The sooner you contact us,
+          the faster you can protect your assets.
+        </p>
+        <ul>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            Act early to save money, prevent damage, and boost efficiency.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            Production slots fill quickly—secure your order while space is open.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            You’re choosing a long-term partner, not just a product.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            Temporary fixes fail fast—you deserve long-lasting protection.
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-check"></i>
+            Off-the-shelf tarps cost more in constant replacements and downtime.
+          </li>
+        </ul>
+        <a class="cta">Request a quote</a>
+      </div>
+      <div class="last-call-wrapper-image">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="{% static 'img/IMG21.webp'%}"
+            type="image/webp"
+          />
+          <img
+            src="{% static 'img/IMG21.jpg'%}"
+            alt="A bakkie with the loading bin covered with tarpaulin"
+            loading="lazy"
+            width="300"
+            height="300"
+          />
+        </picture>
+      </div>
     </div>
-    <picture>
-      <source
-        media="(min-width: 768px)"
-        srcset="{% static 'img/IMG21.webp'%}"
-        type="image/webp"
-      />
-      <img
-        src="{% static 'img/IMG21.jpg'%}"
-        alt="A bakkie with the loading bin covered with tarpaulin"
-        loading="lazy"
-        width="300"
-        height="300"
-      />
-    </picture>
   </section>
 </main>
 {% endblock %}

@@ -251,7 +251,7 @@ nav a {
   margin-bottom: 2rem;
 }
 
-.highlight-charchoal {
+.highlight-charcoal {
   color: var(--charchoal);
 }
 
@@ -423,12 +423,16 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 5rem;
+}
+
+.benefits-wrapper-image,
+.benefits-wrapper-text {
+  flex: 1;
 }
 
 .benefits-wrapper-image {
-  width: 50rem;
-  height: 40rem;
+  height: 50rem;
   position: relative;
   border-radius: 8px;
 }
@@ -492,7 +496,6 @@ nav a {
   height: 30rem;
   position: relative;
   margin-bottom: 2rem;
-  /* border-radius: 0.8rem; */
 }
 
 .steps-container-wrapper-image picture,
@@ -512,4 +515,52 @@ nav a {
 
 .steps-container-wrapper h4 {
   margin-bottom: 1rem;
+}
+
+/* ----------------- LAST CALL SECTION ----------------- */
+.last-call {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.last-call-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.last-call-wrapper-image,
+.last-call-wrapper-text {
+  flex: 1;
+}
+
+.last-call-wrapper-text p,
+.last-call-wrapper-text ul {
+  margin-bottom: 3rem;
+}
+
+.last-call-wrapper-text li {
+  margin-bottom: 1.5rem;
+}
+
+.last-call-wrapper-text li i {
+  margin-right: 1rem;
+}
+
+.last-call-wrapper-image {
+  position: relative;
+  height: 50rem;
+  border-radius: 8px;
+}
+
+.last-call-wrapper-image picture,
+.last-call-wrapper-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
