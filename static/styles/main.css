@@ -85,6 +85,10 @@ h4 {
   font-size: var(--text-h4);
 }
 
+h5 {
+  font-size: var(--text-h5);
+}
+
 li {
   list-style: none;
 }
@@ -563,4 +567,68 @@ nav a {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* ----------------- FOOTER SECTION ----------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 5rem 2rem 1rem;
+  background-color: var(--primary-shade);
+  color: var(--primary-tint);
+}
+
+.footer-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-wrapper-logo {
+  position: relative;
+  width: 10%;
+  height: 15rem;
+}
+
+.footer-wrapper-logo picture,
+.footer-wrapper-logo img {
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-wrapper-text {
+  width: 78%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-wrapper-text h5 {
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper-text address {
+  font-style: normal;
+  /* color: var(--white); */
+}
+
+.footer-wrapper-text a {
+  text-decoration: none;
+  color: var(--primary-tint);
+}
+
+.text-small {
+  font-size: var(--text-sm);
+}
+
+.footer-wrapper-socials a {
+  font-size: var(--text-h5);
 }

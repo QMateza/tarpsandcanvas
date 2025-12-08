@@ -64,5 +64,70 @@
       </header>
       {%block content%} {% endblock %}
     </div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-wrapper-logo">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/logo01_sm_tint.webp' %}"
+              type="image/webp"
+            />
+            <img src="" alt="" />
+          </picture>
+        </div>
+        <div class="footer-wrapper-text">
+          <address>
+            <h5>Contact us</h5>
+            41 Magnolia Street<br />
+            Braelyn<br />
+            East London<br />
+            043 743 6736<br />
+            <script>
+              document.write(
+                '<a href="mailto:' +
+                  "info" +
+                  "@" +
+                  "tarpsandcanvas" +
+                  "." +
+                  "co" +
+                  "." +
+                  "za" +
+                  '">' +
+                  "info" +
+                  "@" +
+                  "tarpsandcanvas" +
+                  "." +
+                  "co" +
+                  "." +
+                  "za" +
+                  "</a>"
+              );
+            </script>
+          </address>
+          <article>
+            <h5>Web links</h5>
+            <ul>
+              <li>Home</li>
+              <li>About us</li>
+              <li>Products</li>
+              <li>Contact</li>
+            </ul>
+          </article>
+          <div class="footer-wrapper-socials">
+            <h5>Socials</h5>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-small">
+        Tarps and Canvas. All rights reserved. © Copyright
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <noscript>2025</noscript>. Website by Q Mateza.
+      </p>
+    </footer>
   </body>
 </html>
