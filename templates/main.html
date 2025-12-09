@@ -53,10 +53,26 @@
           </picture>
           <nav>
             <ul class="nav-links">
-              <li><a href="">Home</a></li>
-              <li><a href="">About us</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">Contact</a></li>
+              <li
+                class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+              >
+                <a href="{% url 'home' %}">Home</a>
+              </li>
+              <li
+                class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"
+              >
+                <a href="{% url 'about' %}">About us</a>
+              </li>
+              <li
+                class="{% if request.resolver_match.url_name == 'products' %}active{% endif %}"
+              >
+                <a href="{% url 'products' %}">Products</a>
+              </li>
+              <li
+                class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
+              >
+                <a href="{% url 'contact' %}">Contact</a>
+              </li>
             </ul>
             <a href="" class="cta">Request a quote</a>
           </nav>
