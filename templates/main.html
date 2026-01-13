@@ -35,22 +35,24 @@
     <div class="page-wrapper">
       <header>
         <div class="header-wrapper">
-          <picture class="logo">
-            <source
-              media="(min-width: 768px)"
-              srcset="{% static 'img/logo01_med.webp' %}"
-              type="image/png"
-            />
-            <source
-              media="(min-width: 500px)"
-              srcset="{% static 'img/logo01_sm.webp' %}"
-              type="image/png"
-            />
-            <img
-              src="{% static 'img/logo01_sm.png' %}"
-              alt="Tarps and canvas logo"
-            />
-          </picture>
+          <a href="/" class="logo-anchor">
+            <picture class="logo">
+              <source
+                media="(min-width: 768px)"
+                srcset="{% static 'img/logo01_med.webp' %}"
+                type="image/png"
+              />
+              <source
+                media="(min-width: 500px)"
+                srcset="{% static 'img/logo01_sm.webp' %}"
+                type="image/png"
+              />
+              <img
+                src="{% static 'img/logo01_sm.png' %}"
+                alt="Tarps and canvas logo"
+              />
+            </picture>
+          </a>
           <nav>
             <ul class="nav-links">
               <li

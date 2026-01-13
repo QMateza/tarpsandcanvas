@@ -139,8 +139,13 @@ header {
   width: 90%;
 }
 
-.logo {
+.logo-anchor {
+  display: inline-block;
   width: 6%;
+}
+
+.logo {
+  width: 100%;
 }
 
 .logo picture,
@@ -163,6 +168,10 @@ nav {
 
 nav a {
   color: var(--white);
+}
+
+.nav-links li a {
+  font-weight: 600;
 }
 
 /* ----------------- HERO SECTION ----------------- */
@@ -631,4 +640,54 @@ footer {
 
 .footer-wrapper-socials a {
   font-size: var(--text-h5);
+}
+
+/* ----------------- ABOUT PAGE ----------------- */
+.hidden {
+  height: 15vh;
+  background-color: #0000004e;
+}
+
+.flex-hero-section {
+  padding: 8rem 0;
+}
+
+.flex-hero-section-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.flex-hero-section-wrapper-text h1 {
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.flex-hero-section-wrapper-text > p:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.flex-hero-section-wrapper-text-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.highlight-about {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.flex-hero-section-wrapper-text-third p {
+  width: 20rem;
+}
+
+.flex-hero-section-wrapper-text-third div {
+  height: 3rem;
+  width: 0.5rem;
+  background-color: var(--primary-tint);
 }
