@@ -1,1 +1,36 @@
 {% extends 'main.html' %} {% load static %} {% block content %}
+<div class="hidden"><p>.</p></div>
+<section class="flex-hero-section">
+  <div class="flex-hero-section-wrapper">
+    <div class="flex-hero-section-wrapper-text">
+      <h1>Our Pruducts</h1>
+      <p>
+        From tarpaulin to Porta Tank solutions, we build strong, efficient,
+        custom-made products tailored to your needs. These are only a few
+        examples—if you can imagine it, we can make it.
+      </p>
+      <div class="flex-hero-section-wrapper-text-third">
+        <p>
+          <span class="highlight-about">Black Female–Owned</span> Manufacturer
+        </p>
+        <div></div>
+        <p>
+          Products <span class="highlight-about">Exported Across Africa</span>
+        </p>
+        <div></div>
+        <p>Durability <span class="highlight-about">Tested & Proven</span></p>
+      </div>
+    </div>
+    <div class="flex-hero-section-wrapper-image">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="{% static 'img/IMG05-about.webp' %}"
+          type="image/webp"
+        />
+        <img src="{% static 'img/IMG05-about.jpg' %}" alt="" />
+      </picture>
+    </div>
+  </div>
+</section>
+{% endblock %}

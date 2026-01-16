@@ -1,4 +1,4 @@
-<?php $page = 'home'; include 'view/header.php' ?>
+{% extends 'main.html' %} {% load static %} {% block content %}
 <div class="center_it">
     <div class="about head_image">Contact Us</div>
 </div>
@@ -49,4 +49,4 @@
             </div>
         </div>
 </main>
-<?php include 'view/footer.php' ?>
+{% endblock %}
