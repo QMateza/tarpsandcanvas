@@ -791,3 +791,31 @@ footer {
 }
 
 /* ----------------- PRODUCTS PAGE ----------------- */
+
+.products {
+  padding: 5rem 0;
+}
+
+.products-wrapper {
+  width: 80%;
+  min-height: 65rem;
+  margin: 0 auto var(--section-divider);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(200px, 300px);
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.products-wrapper div {
+  position: relative;
+}
+
+.products-wrapper picture,
+.products-wrapper img {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  border-radius: 8px;
+}

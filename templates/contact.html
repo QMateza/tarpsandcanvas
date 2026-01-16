@@ -1,4 +1,25 @@
 {% extends 'main.html' %} {% load static %} {% block content %}
+<div class="hidden"><p>.</p></div>
+<section class="flex-hero-section">
+  <div class="flex-hero-section-wrapper">
+    <div class="flex-hero-section-wrapper-text">
+      <h1>Let's get in touch</h1>
+      <p>
+        Have a custom project in mind? Our team is ready to guide you, answer questions, and prepare tailored solutions. Contact us for quotes, specifications, or expert support.
+      </p>
+    </div>
+    <div class="flex-hero-section-wrapper-image">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="{% static 'img/IMG05-about.webp' %}"
+          type="image/webp"
+        />
+        <img src="{% static 'img/IMG05-about.jpg' %}" alt="" />
+      </picture>
+    </div>
+  </div>
+</section>
 <div class="center_it">
     <div class="about head_image">Contact Us</div>
 </div>
