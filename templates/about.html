@@ -2,7 +2,7 @@
 <div class="hidden"><p>.</p></div>
 <main class="about">
   <section class="flex-hero-section">
-    <div class="flex-hero-section-wrapper">
+    <div class="flex-hero-section-wrapper width-sz">
       <div class="flex-hero-section-wrapper-text">
         <h1>Company Overview</h1>
         <p>
@@ -24,134 +24,328 @@
       </div>
       <div class="flex-hero-section-wrapper-image">
         <picture>
-            <source media="(min-width: 768px)" srcset="{% static 'img/IMG05-about.webp' %}" type="image/webp">
-            <img src="{% static 'img/IMG05-about.jpg' %}" alt="">
+          <source
+            media="(min-width: 768px)"
+            srcset="{% static 'img/IMG05-about.webp' %}"
+            type="image/webp"
+          />
+          <img
+            src="{% static 'img/IMG05-about.jpg' %}"
+            alt="Tarpaulin tent"
+            width="200"
+            height="200"
+          />">
         </picture>
       </div>
     </div>
   </section>
   <section class="who-we-are">
     <h2>Who we are</h2>
-    <div class="who-we-are-container">
-    <div class="who-we-are-items">
+    <div class="who-we-are-container width-sz">
+      <div class="who-we-are-items">
         <div class="who-we-are-items-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG23.webp' %}" type="image/webp">
-                <img src="" alt="">
-            </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG23.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG23_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG23_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG23.jpg' %}"
+              alt="Swimming pool covered with tarpaulin"
+              loading="lazy"
+              width="200"
+              height="200"
+            />
+          </picture>
         </div>
         <div class="who-we-are-items-text">
-        <h4>Our Story & Leadership</h4>
-        <p>Founded in 1994, Tarpaulin & Canvas has grown into the Eastern Cape’s leading manufacturer of custom PVC and canvas products. Now owned by Nande Urban Hub (Pty) Ltd—a black female-owned manufacturing company—we continue to build a strong, sustainable brand backed by nearly three decades of industry expertise and a reputation for quality.</p>
+          <h4>Our Story & Leadership</h4>
+          <p>
+            Founded in 1994, Tarpaulin & Canvas has grown into the Eastern
+            Cape’s leading manufacturer of custom PVC and canvas products. Now
+            owned by Nande Urban Hub (Pty) Ltd—a black female-owned
+            manufacturing company—we continue to build a strong, sustainable
+            brand backed by nearly three decades of industry expertise and a
+            reputation for quality.
+          </p>
         </div>
-    </div>
-    <div class="who-we-are-items">
+      </div>
+      <div class="who-we-are-items">
         <div class="who-we-are-items-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG24.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG24.jpg' %}" alt="">
-            </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG24.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG24_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG24_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG24.jpg' %}"
+              alt="Truck load protected with tarpaulin covering"
+              loading="lazy"
+              width="200"
+              height="200"
+            />
+          </picture>
         </div>
         <div class="who-we-are-items-text">
-        <h4>Local Manufacturing Excellence</h4>
-        <p>With almost 30 years of experience, we operate from a 1000sqm ISO9001:2015-certified factory in Braelyn, East London. Here, our skilled team manufactures high-quality products and provides reliable on-site installations and repairs. From tension curtains and picking bags to boat covers and blinds, every item is custom-made with precision.</p>
+          <h4>Local Manufacturing Excellence</h4>
+          <p>
+            With almost 30 years of experience, we operate from a 1000sqm
+            ISO9001:2015-certified factory in Braelyn, East London. Here, our
+            skilled team manufactures high-quality products and provides
+            reliable on-site installations and repairs. From tension curtains
+            and picking bags to boat covers and blinds, every item is
+            custom-made with precision.
+          </p>
         </div>
-    </div>
-    <div class="who-we-are-items">
+      </div>
+      <div class="who-we-are-items">
         <div class="who-we-are-items-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG25.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG25.jpg' %}" alt="">
-            </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG25.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG25_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG25_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG25.jpg' %}"
+              alt="Parking lot covered with tarpaulin net for shade"
+              loading="lazy"
+              width="200"
+              height="200"
+            />
+          </picture>
         </div>
         <div class="who-we-are-items-text">
-        <h4>Innovation That Drives Results</h4>
-        <p>In 2018, we engineered and patented the first tarpaulin-based portable water tanker system—expanding our capabilities into agriculture, transport, and water storage. This innovation reflects our commitment to efficiency, durability, and solutions that solve real-world challenges across multiple industries.</p>
+          <h4>Innovation That Drives Results</h4>
+          <p>
+            In 2018, we engineered and patented the first tarpaulin-based
+            portable water tanker system—expanding our capabilities into
+            agriculture, transport, and water storage. This innovation reflects
+            our commitment to efficiency, durability, and solutions that solve
+            real-world challenges across multiple industries.
+          </p>
         </div>
-    </div>
-    <div class="who-we-are-items">
+      </div>
+      <div class="who-we-are-items">
         <div class="who-we-are-items-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG26.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG26.jpg' %}" alt="">
-            </picture>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG26.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG26_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG26_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG26.jpg' %}"
+              alt="Photo of a front porch where the furniture is protected from the weather by a tarpaulin."
+              loading="lazy"
+              width="200"
+              height="200"
+            />
+          </picture>
         </div>
         <div class="who-we-are-items-text">
-        <h4>Growing Across Africa</h4>
-        <p>Our patented Porta Tank system is exported to countries like Tanzania and Seychelles through trusted distribution partners. As we expand across Africa, our long-term goal is to become Southern Africa’s preferred PVC manufacturer—delivering custom solutions, excellent service, and world-class products to every customer.</p>
+          <h4>Growing Across Africa</h4>
+          <p>
+            Our patented Porta Tank system is exported to countries like
+            Tanzania and Seychelles through trusted distribution partners. As we
+            expand across Africa, our long-term goal is to become Southern
+            Africa’s preferred PVC manufacturer—delivering custom solutions,
+            excellent service, and world-class products to every customer.
+          </p>
         </div>
-    </div> 
-    </div>
+      </div>
     </div>
   </section>
   <section class="purpose">
-    <div class="purpose-wrapper">
-        <article class="vision card">
-            <div class="purpose-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG27.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG27.jpg' %}" alt="" width="50px" height="50px">
-            </picture>
-            </div>
-            <h4>Vision</h4>
-            <p>Trusted Manufacturer in Southern Africa, delivering quality solutions and services to our clients.</p>
-        </article>
-        <article class="mission card">
-            <div class="purpose-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG28.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG28.jpg' %}" alt="" width="50px" height="50px">
-            </picture>
-            </div>
-            <h4>Mission</h4>
-            <p>Develop and deliver quality PVC and canvas solutions aimed at customer satisfaction</p></article>
-        <article class="values card">
-            <div class="purpose-image">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{% static 'img/IMG29.webp' %}" type="image/webp">
-                <img src="{% static 'img/IMG29.jpg' %}" alt="" width="50px" height="50px">
-            </picture>
-            </div>
-            <h4>Values</h4>
-            <p>Quality, Growth, Trust and Honesty, Integrity and Innovation.</p></article>
+    <div class="purpose-wrapper width-sz">
+      <article class="vision card">
+        <div class="purpose-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG27.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG27_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG27_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG27.jpg' %}"
+              alt="Picture of a light bulb"
+              loading="lazy"
+              width="50px"
+              height="50px"
+            />
+          </picture>
+        </div>
+        <h4>Vision</h4>
+        <p>
+          Trusted Manufacturer in Southern Africa, delivering quality solutions
+          and services to our clients.
+        </p>
+      </article>
+      <article class="mission card">
+        <div class="purpose-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG28.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG28_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG28_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG28.jpg' %}"
+              alt="bull's eye"
+              loading="lazy"
+              width="50px"
+              height="50px"
+            />
+          </picture>
+        </div>
+        <h4>Mission</h4>
+        <p>
+          Develop and deliver quality PVC and canvas solutions aimed at customer
+          satisfaction
+        </p>
+      </article>
+      <article class="values card">
+        <div class="purpose-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="{% static 'img/IMG29.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG29_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG29_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG29.jpg' %}"
+              alt="Picture of hands holding"
+              loading="lazy"
+              width="50px"
+              height="50px"
+            />
+          </picture>
+        </div>
+        <h4>Values</h4>
+        <p>Quality, Growth, Trust and Honesty, Integrity and Innovation.</p>
+      </article>
     </div>
   </section>
   <section class="principles">
-      <h2>What does the company stand for</h2>
-    <div class="principles-wrapper">
-        <article class="principles-wrapper-items card">
-            <i class="fa-solid fa-computer"></i>
-            <h5>Technology</h5>
-            <p>Innovative high-performance PVC solutions and systems</p>
-        </article>
-        <article class="principles-wrapper-items card">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <h5>Safety</h5>
-            <p>Load protection solutions, transportation safety and secure installations</p>
-        </article>
-        <article class="principles-wrapper-items card">
-            <i class="fa-regular fa-lightbulb"></i>
-            <h5>Know-how</h5>
-            <p>Patented technology, the quality of PVC and a dedicated research and development team.</p>
-        </article>
-        <article class="principles-wrapper-items card">
-            <i class="fa-solid fa-people-group"></i>
-            <h5>Consultancy</h5>
-            <p>Creation of custom tarpaulin and canvas systems to meet specific needs</p>
-        </article>
-        <article class="principles-wrapper-items card">
-            <i class="fa-regular fa-headphones"></i>
-            <h5>Support</h5>
-            <p>After-sales technical assistance, original parts, and tarpaulin registration service.</p>
-        </article>
-        <article class="principles-wrapper-items card">
-            <i class="fa-solid fa-certificate"></i>
-            <h5>Quality Assurance</h5>
-            <p>After-sales technical assistance, original parts, and tarpaulin registration service.</p>
-        </article>
+    <h2>What does the company stand for</h2>
+    <div class="principles-wrapper width-sz">
+      <article class="principles-wrapper-items card">
+        <i class="fa-solid fa-computer"></i>
+        <h5>Technology</h5>
+        <p>Innovative high-performance PVC solutions and systems</p>
+      </article>
+      <article class="principles-wrapper-items card">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h5>Safety</h5>
+        <p>
+          Load protection solutions, transportation safety and secure
+          installations
+        </p>
+      </article>
+      <article class="principles-wrapper-items card">
+        <i class="fa-regular fa-lightbulb"></i>
+        <h5>Know-how</h5>
+        <p>
+          Patented technology, the quality of PVC and a dedicated research and
+          development team.
+        </p>
+      </article>
+      <article class="principles-wrapper-items card">
+        <i class="fa-solid fa-people-group"></i>
+        <h5>Consultancy</h5>
+        <p>
+          Creation of custom tarpaulin and canvas systems to meet specific needs
+        </p>
+      </article>
+      <article class="principles-wrapper-items card">
+        <i class="fa-regular fa-headphones"></i>
+        <h5>Support</h5>
+        <p>
+          After-sales technical assistance, original parts, and tarpaulin
+          registration service.
+        </p>
+      </article>
+      <article class="principles-wrapper-items card">
+        <i class="fa-solid fa-certificate"></i>
+        <h5>Quality Assurance</h5>
+        <p>
+          After-sales technical assistance, original parts, and tarpaulin
+          registration service.
+        </p>
+      </article>
     </div>
-    
-
   </section>
 </main>
 {% endblock %}

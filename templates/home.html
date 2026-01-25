@@ -31,7 +31,7 @@
       From transport to agriculture, our tarps are built to handle the toughest
       conditions. See why businesses trust us since 1994.
     </p>
-    <a href="" class="cta">Request a quote</a>
+    <a href="{% url 'contact' %}" class="cta">Request a quote</a>
   </div>
 </section>
 <main>
@@ -208,7 +208,7 @@
     </div>
   </section>
   <section class="pain-point">
-    <div class="pain-point-wrapper">
+    <div class="pain-point-wrapper width-sz">
       <div class="pain-point-text">
         <h2>
           Stop replacing!
@@ -228,13 +228,18 @@
           fit, and long-term value designed around your operation—not the other
           way around.
         </p>
-        <a href="" class="cta">Request a quote</a>
+        <a href="{% url 'contact' %}" class="cta">Request a quote</a>
       </div>
       <div class="pain-point-image">
         <picture>
           <source
             media="(min-width: 768px)"
             srcset="{% static 'img/IMG03.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="{% static 'img/IMG03_sm.webp' %}"
             type="image/webp"
           />
           <img
@@ -253,6 +258,11 @@
       <source
         media="(min-width: 768px)"
         srcset="{% static 'img/banner.webp' %}"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 400px)"
+        srcset="{% static 'img/banner_sm.webp' %}"
         type="image/webp"
       />
       <img
@@ -286,13 +296,18 @@
     </div>
   </section>
   <section class="value-prop">
-    <h2>Why us, you may ask</h2>
-    <div class="value-prop-wrapper">
+    <h2>Why us, you may ask?</h2>
+    <div class="value-prop-wrapper width-sz">
       <div class="value-prop-card card">
         <picture>
           <source
             media="(min-width:768px )"
             srcset="{% static 'img/shield.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 100px )"
+            srcset="{% static 'img/shield_sm.webp' %}"
             type="image/webp"
           />
           <img
@@ -318,6 +333,11 @@
             srcset="{% static 'img/tape-measure.webp' %}"
             type="image/webp"
           />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/tape-measure_sm.webp' %}"
+            type="image/webp"
+          />
           <img
             src="{% static 'img/tape-measure.webp' %}"
             alt="Tape measure icon"
@@ -338,6 +358,11 @@
           <source
             media="(min-width: 768px)"
             srcset="{% static 'img/best-seller.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/best-seller_sm.webp' %}"
             type="image/webp"
           />
           <img
@@ -362,8 +387,13 @@
             srcset="{% static 'img/africa.webp' %}"
             type="image/webp"
           />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/africa_sm.webp' %}"
+            type="image/webp"
+          />
           <img
-            src="{% static 'img/africa.jpg' %}"
+            src="{% static 'img/africa.png' %}"
             alt="Africa icon"
             loading="lazy"
             width="150"
@@ -382,6 +412,11 @@
           <source
             media="(min-width: 768px)"
             srcset="{% static 'img/speedometer.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/speedometer_sm.webp' %}"
             type="image/webp"
           />
           <img
@@ -406,8 +441,13 @@
             srcset="{% static 'img/tarp.webp' %}"
             type="image/webp"
           />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/tarp_sm.webp' %}"
+            type="image/webp"
+          />
           <img
-            src="{% static 'img/tarp.jpg' %}"
+            src="{% static 'img/tarp.png' %}"
             alt="Tent icon"
             loading="lazy"
             width="150"
@@ -425,7 +465,7 @@
     </div>
   </section>
   <section class="social-proof2">
-    <div class="social-proof2-container">
+    <div class="social-proof2-container width-sz">
       <h2>Your Problem, Custom-Solved.</h2>
       <article class="social-proof2-wrapper">
         <div>
@@ -433,6 +473,16 @@
             <source
               media="(min-width: 768px)"
               srcset="{% static 'img/IMG22.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG22_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG22_sm.webp' %}"
               type="image/webp"
             />
             <img
@@ -455,6 +505,16 @@
               srcset="{% static 'img/IMG15.webp' %}"
               type="image/webp"
             />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG15_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG15_sm.webp' %}"
+              type="image/webp"
+            />
             <img
               src="{% static 'img/IMG15.jpg' %}"
               alt="Company parking lot with tarpaulin covering"
@@ -475,6 +535,16 @@
               srcset="{% static 'img/IMG16.webp' %}"
               type="image/webp"
             />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG16_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1000m²)"
+              srcset="{% static 'img/IMG16_sm.webp' %}"
+              type="image/webp"
+            />
             <img
               src="{% static 'img/IMG16.jpg' %}"
               alt="Truck load protected with tarpaulin covering"
@@ -492,12 +562,22 @@
   </section>
   <section class="benefits">
     <h2>Core features that set us apart from the competition</h2>
-    <div class="benefits-wrapper">
+    <div class="benefits-wrapper width-sz">
       <div class="benefits-wrapper-image">
         <picture>
           <source
             media="(min-width: 768px)"
             srcset="{% static 'img/IMG17.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="{% static 'img/IMG17_med.webp' %}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/IMG17_sm.webp' %}"
             type="image/webp"
           />
           <img
@@ -561,7 +641,7 @@
           </div>
         </div>
         <div>
-          <a class="cta">Request a quote</a>
+          <a href="{% url 'contact' %}" class="cta">Request a quote</a>
         </div>
       </div>
     </div>
@@ -570,13 +650,23 @@
     <h2>
       How It Works: <span class="highlight-charcoal">Quality Made Easy</span>
     </h2>
-    <div class="steps-container-wrapper">
+    <div class="steps-container-wrapper width-sz">
       <article>
         <div class="steps-container-wrapper-image">
           <picture>
             <source
               media="(min-width: 768px)"
               srcset="{% static 'img/IMG18.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG18_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG18_sm.webp' %}"
               type="image/webp"
             />
             <img
@@ -603,7 +693,23 @@
               srcset="{% static 'img/IMG19.webp' %}"
               type="image/webp"
             />
-            <img src="" alt="" loading="lazy" width="200" height="200" />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG19_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG19_sm.webp' %}"
+              type="image/webp"
+            />
+            <img
+              src="{% static 'img/IMG19.jpg' %}"
+              alt="Truck load protected with tarpaulin covering"
+              loading="lazy"
+              width="200"
+              height="200"
+            />
           </picture>
         </div>
 
@@ -620,6 +726,16 @@
             <source
               media="(min-width: 768px)"
               srcset="{% static 'img/IMG20.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="{% static 'img/IMG20_med.webp' %}"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 100px)"
+              srcset="{% static 'img/IMG20_sm.webp' %}"
               type="image/webp"
             />
             <img
@@ -641,7 +757,7 @@
       </article>
     </div>
   </section>
-  <section class="last-call">
+  <section class="last-call width-sz">
     <h2>
       Get the Cover You Need Today.<br />
       <span class="highlight-charcoal">Save Costs Immediately.</span>
@@ -675,13 +791,23 @@
             Off-the-shelf tarps cost more in constant replacements and downtime.
           </li>
         </ul>
-        <a class="cta">Request a quote</a>
+        <a href="{% url 'contact' %}" class="cta">Request a quote</a>
       </div>
       <div class="last-call-wrapper-image">
         <picture>
           <source
             media="(min-width: 768px)"
             srcset="{% static 'img/IMG21.webp'%}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 400px)"
+            srcset="{% static 'img/IMG21_med.webp'%}"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 100px)"
+            srcset="{% static 'img/IMG21_sm.webp'%}"
             type="image/webp"
           />
           <img

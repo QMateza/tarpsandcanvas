@@ -31,7 +31,12 @@
 
   /* ------ SPACING ------ */
 
-  --section-divider: 6rem;
+  --section-divider: 10rem;
+  --heading-margin-bottom: 8rem;
+
+  /* ------ WIDTH ------ */
+
+  --wrapper-max-width: 80%;
 }
 
 /* ----------------- GLOBAL STYLES ----------------- */
@@ -50,6 +55,21 @@ body {
   font-family: var(--FF-inter);
   font-size: var(--text-p);
   color: var(--charchoal);
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: none;
+}
+
+.burger span {
+  display: block;
+  width: 60px;
+  height: 6px;
+  background-color: var(--smoke-white);
+  margin: 10px 0;
+  transition: all 0.3s ease;
 }
 
 .page-wrapper {
@@ -71,7 +91,8 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 8rem;
+  margin-bottom: var(--heading-margin-bottom);
+  padding: 1.5%;
   color: var(--primary);
   text-align: center;
   font-size: var(--text-h2);
@@ -101,13 +122,19 @@ a {
   color: var(--primary);
 }
 
+.width-sz {
+  width: var(--wrapper-max-width);
+  margin: 0;
+}
+
 /* ----------------- COMPONENTS ----------------- */
 .cta {
   display: inline-block;
-  padding: 1rem;
+  padding: 0.8em;
   background-color: var(--secondary);
   border-radius: 8px;
   color: var(--white);
+  white-space: nowrap;
 }
 
 .card {
@@ -215,6 +242,11 @@ nav a {
   margin-bottom: var(--section-divider);
 }
 
+.clients-wrapper,
+.social-proof-wrapper {
+  width: 90%;
+}
+
 .clients-wrapper {
   display: flex;
   align-items: center;
@@ -243,12 +275,10 @@ nav a {
   align-items: center;
   justify-content: center;
   column-gap: 5rem;
-  width: 80%;
   margin: 0 auto;
 }
 
-.pain-point-text,
-.pain-point-image {
+.pain-point-wrapper > div {
   flex: 1;
 }
 
@@ -290,6 +320,7 @@ nav a {
   position: relative;
   width: 100%;
   height: 20rem;
+  margin-bottom: var(--section-divider);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -309,7 +340,6 @@ nav a {
 }
 
 .social-proof-wrapper {
-  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -317,6 +347,7 @@ nav a {
 
 .social-proof-wrapper p {
   width: calc((100% / 4) - 6rem);
+  text-align: center;
 }
 
 .social-proof-highlight {
@@ -334,13 +365,11 @@ nav a {
 
 .value-prop {
   margin: 0 auto;
-  padding: 8rem 0;
   margin-bottom: var(--section-divider);
   background-color: var(--white);
 }
 
 .value-prop-wrapper {
-  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -368,29 +397,23 @@ nav a {
 
 .social-proof2-container {
   position: relative;
-  width: 80%;
   margin: 0 auto;
-}
-
-.social-proof2 h2 {
-  margin-bottom: 8rem;
 }
 
 .social-proof2-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
 }
 
 .social-proof2-wrapper > div {
   position: relative;
-  width: 100%;
+  width: calc(33% - 5rem);
+  padding: 2rem 2rem 5rem;
   height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 8px;
 }
@@ -407,6 +430,7 @@ nav a {
 }
 
 .social-proof2-text {
+  width: calc(100% - 2rem);
   color: var(--white);
   z-index: 1;
   text-align: left;
@@ -419,19 +443,17 @@ nav a {
   color: var(--primary-tint);
 }
 
-.social-proof2-wrapper p {
-  width: 30rem;
-  font-size: var(--text-p);
-}
-
-/* ----------------- SOCIAL PROOF2 SECTION ----------------- */
+/* ----------------- BENEFITS SECTION ----------------- */
 .benefits {
-  padding: 8rem 0;
   margin-bottom: var(--section-divider);
 }
 
+.benefits h2 {
+  width: var(--wrapper-max-width);
+  margin: 0 auto var(--heading-margin-bottom);
+}
+
 .benefits-wrapper {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -440,12 +462,12 @@ nav a {
 }
 
 .benefits-wrapper-image,
-.benefits-wrapper-text {
+.benefits-wrapper-text-container {
   flex: 1;
 }
 
 .benefits-wrapper-image {
-  height: 50rem;
+  height: 60rem;
   position: relative;
   border-radius: 8px;
 }
@@ -486,18 +508,17 @@ nav a {
 }
 
 .steps-container h2 {
-  margin-bottom: 8rem;
+  padding: 1rem;
 }
 
 .steps-container-wrapper {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
 
 .steps-container-wrapper article {
-  width: 25%;
+  width: 30%;
   padding: 1rem 2rem 2rem;
   background-color: var(--white);
   border-radius: 1.8rem;
@@ -532,9 +553,7 @@ nav a {
 
 /* ----------------- LAST CALL SECTION ----------------- */
 .last-call {
-  width: 80%;
-  margin: 0 auto;
-  padding: 8rem 0;
+  margin: 0 auto var(--section-divider);
 }
 
 .last-call-wrapper {
@@ -591,7 +610,7 @@ footer {
 }
 
 .footer-wrapper {
-  width: 80%;
+  width: var(--wrapper-max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -651,16 +670,40 @@ footer {
 /* ----------------- HERO SECTION ----------------- */
 
 .flex-hero-section {
-  padding: 8rem 0;
+  height: 70vh;
 }
 
 .flex-hero-section-wrapper {
-  width: 80%;
-  margin: 0 auto;
+  margin: var(--section-divider) auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 8rem;
+}
+
+.flex-hero-section-wrapper > div {
+  width: calc(50% - 3rem);
+  height: 50rem;
+}
+
+.flex-hero-section-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-hero-section-wrapper-image {
+  position: relative;
+}
+
+.flex-hero-section-wrapper-image picture,
+.flex-hero-section-wrapper-image img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: 60% 10%;
+  width: 100%;
+  height: inherit;
 }
 
 .flex-hero-section-wrapper-text h1 {
@@ -676,7 +719,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .highlight-about {
@@ -685,7 +728,8 @@ footer {
 }
 
 .flex-hero-section-wrapper-text-third p {
-  width: 20rem;
+  width: calc(33% - 2rem);
+  min-width: 110px;
 }
 
 .flex-hero-section-wrapper-text-third div {
@@ -698,18 +742,17 @@ footer {
 
 .who-we-are {
   padding: 5rem 0;
-  margin-bottom: 5rem;
+  margin-bottom: var(--section-divider);
   background-color: var(--smoke-white);
 }
 
 .who-we-are-container {
-  width: 80%;
   margin: 0 auto;
 }
 
 .who-we-are-items {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, calc(50% - 2.5rem));
   column-gap: 5rem;
   margin-bottom: 5rem;
   align-items: center;
@@ -734,17 +777,16 @@ footer {
 /* ----------------- PURPOSE SECTION ----------------- */
 
 .purpose-wrapper {
-  width: 80%;
   margin: 0 auto var(--section-divider);
   display: flex;
-  justify-content: space-around;
-  gap: 5rem;
+  justify-content: space-evenly;
 }
 
 .purpose-wrapper article {
-  width: 25%;
-  padding: 4rem;
-  background-color: var(--smoke-white);
+  width: calc(33% - 2rem);
+  max-width: 400px;
+  padding: 2rem;
+  /* background-color: var(--smoke-white); */
 }
 
 .purpose-image {
@@ -760,7 +802,7 @@ footer {
   object-fit: cover;
   object-position: 10% 10%;
   width: 100%;
-  height: 25rem;
+  height: 100%;
   min-height: 10rem;
   border-radius: 8px;
 }
@@ -770,6 +812,13 @@ footer {
   color: var(--primary);
 }
 
+.mission .purpose-image picture,
+.mission .purpose-image img,
+.values .purpose-image picture,
+.values .purpose-image img {
+  object-position: 10% 40%;
+}
+
 /* ----------------- PRINCIPLES SECTION ----------------- */
 
 .principles {
@@ -777,7 +826,6 @@ footer {
 }
 
 .principles-wrapper {
-  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -797,14 +845,12 @@ footer {
 }
 
 .products-wrapper {
-  width: 80%;
-  min-height: 65rem;
   margin: 0 auto var(--section-divider);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(200px, 300px);
+  grid-auto-rows: minmax(200px, 300px);
   justify-content: space-around;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .products-wrapper div {
@@ -823,16 +869,14 @@ footer {
 /* ----------------- CONTACT PAGE ----------------- */
 
 .main_wrapper {
-  width: 80%;
   height: 80vh;
   margin: 0 auto var(--section-divider);
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
 }
 
 .main_wrapper section {
-  width: calc(50% - 5rem);
+  width: calc(50% - 3rem);
   height: inherit;
 }
 
@@ -851,6 +895,7 @@ textarea {
   width: 100%;
   padding: 2rem;
   border: none;
+  font-family: var(--FF-inter);
 }
 
 fieldset {
@@ -914,4 +959,279 @@ fieldset {
 
 address {
   display: inline-block;
+}
+
+@media screen and (max-width: 93.75em) {
+  /* 1500px */
+
+  .social-proof2-wrapper > div {
+    width: calc(33% - 3rem);
+  }
+
+  .form {
+    padding: 3rem 1rem;
+    min-width: 372px;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  /* 1000px */
+  html {
+    font-size: 61.5%;
+  }
+
+  .width-sz {
+    width: calc(var(--wrapper-max-width) + 10%);
+  }
+
+  .purpose-wrapper {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  /* 768px */
+  html,
+  body {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+  html {
+    font-size: 56.5%;
+  }
+
+  .logo-anchor {
+    width: 15%;
+  }
+
+  .nav-links,
+  nav .cta {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .width-sz {
+    width: calc(var(--wrapper-max-width) + 15%);
+  }
+
+  h2,
+  .steps-container h2,
+  .benefits h2 {
+    margin-bottom: calc(var(--heading-margin-bottom) - 3rem);
+  }
+
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-section div {
+    width: 100%;
+  }
+
+  .flex-hero-section {
+    height: auto;
+  }
+
+  .flex-hero-section-wrapper-image {
+    display: none;
+  }
+
+  .flex-hero-section-wrapper > div {
+    width: 100%;
+    height: inherit;
+  }
+
+  .pain-point-wrapper,
+  .last-call-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .pain-point-wrapper > div,
+  .benefits-wrapper > div,
+  .last-call-wrapper > div {
+    flex: none;
+  }
+
+  .pain-point-image {
+    height: 50rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .value-prop-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .social-proof2-wrapper > div {
+    width: calc(33% - 0.5rem);
+  }
+
+  .benefits-wrapper {
+    flex-direction: column;
+  }
+
+  .benefits-wrapper-image,
+  .benefits-wrapper-text-container {
+    flex: none;
+  }
+
+  .benefits-wrapper-image {
+    height: 50rem;
+    width: 100%;
+  }
+
+  .benefits h2 {
+    width: 100%;
+  }
+
+  .steps-container-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .steps-container-wrapper article {
+    width: 100%;
+  }
+
+  .last-call-wrapper-image {
+    display: none;
+  }
+
+  .pain-point-text h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .purpose-image {
+    height: 20rem;
+  }
+
+  .principles-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .main_wrapper {
+    flex-direction: column;
+  }
+
+  .main_wrapper {
+    height: auto;
+  }
+
+  .main_wrapper section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .form {
+    margin: 0 auto var(--section-divider);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero-section {
+    padding: 2rem;
+  }
+
+  .hero-section h1 {
+    font-size: calc(var(--text-h1) - 50%);
+  }
+
+  .social-proof-wrapper {
+    flex-direction: column;
+  }
+
+  .social-proof {
+    padding: 5%;
+    height: auto;
+  }
+
+  .social-proof-wrapper p {
+    width: 100%;
+  }
+
+  .seperator {
+    width: 50px;
+    height: 5px;
+    margin: 2rem;
+    background-color: var(--primary-tint);
+  }
+
+  .purpose-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .purpose-wrapper article {
+    width: 100%;
+  }
+
+  .principles-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .who-we-are-items {
+    grid-template-columns: 1fr;
+  }
+
+  .who-we-are-items-image {
+    margin-bottom: 2rem;
+  }
+
+  .who-we-are-items:nth-child(odd) .who-we-are-items-image {
+    display: none;
+  }
+
+  .products-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .value-prop-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .social-proof2-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .social-proof2-wrapper > div {
+    width: 100%;
+  }
+
+  .main_wrapper section {
+    width: 100%;
+  }
+
+  .form {
+    min-width: 0;
+  }
+
+  .form-control.input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 53%;
+  }
+
+  .principles-wrapper,
+  .products-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

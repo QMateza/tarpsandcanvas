@@ -1,9 +1,9 @@
 {% extends 'main.html' %} {% load static %} {% block content %}
 <div class="hidden"><p>.</p></div>
 <section class="flex-hero-section">
-  <div class="flex-hero-section-wrapper">
+  <div class="flex-hero-section-wrapper width-sz">
     <div class="flex-hero-section-wrapper-text">
-      <h1>Our Pruducts</h1>
+      <h1>Our Products</h1>
       <p>
         From tarpaulin to Porta Tank solutions, we build strong, efficient,
         custom-made products tailored to your needs. These are only a few
@@ -15,7 +15,7 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="{% static 'img/IMG05-about.webp' %}"
+          srcset="{% static 'img/IMG30.webp' %}"
           type="image/webp"
         />
         <img src="{% static 'img/IMG05-about.jpg' %}" alt="" />
@@ -24,7 +24,7 @@
   </div>
 </section>
 <section class="products">
-  <div class="products-wrapper">
+  <div class="products-wrapper width-sz">
     <div>
       <picture>
         <source
@@ -32,7 +32,23 @@
           srcset="{% static 'img/IMG03.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG03_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG03_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG03.jpg' %}"
+          alt="Tarpaulin net shade over the pool area"
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
     <div>
@@ -42,7 +58,23 @@
           srcset="{% static 'img/IMG17.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG17_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG17_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG17.jpg' %}"
+          alt="Swimming pool covered with tarpaulin"
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
     <div>
@@ -52,7 +84,23 @@
           srcset="{% static 'img/IMG19.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG19_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG19_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG19.jpg' %}"
+          alt="Truck load protected with tarpaulin covering"
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
     <div>
@@ -62,7 +110,23 @@
           srcset="{% static 'img/IMG20.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG20_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG20_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG20.jpg' %}"
+          alt="Photo of a front porch where the furniture is protected from the weather by a tarpaulin."
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
     <div>
@@ -72,7 +136,23 @@
           srcset="{% static 'img/IMG25.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG25_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG25_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG25.jpg' %}"
+          alt="Parking lot covered with tarpauling net for shade"
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
     <div>
@@ -82,7 +162,23 @@
           srcset="{% static 'img/IMG18.webp' %}"
           type="image/webp"
         />
-        <img src="" alt="" width="300px" height="300px" />
+        <source
+          media="(min-width:400px  )"
+          srcset="{% static 'img/IMG18_med.webp' %}"
+          type="image/webp"
+        />
+        <source
+          media="(min-width:100px  )"
+          srcset="{% static 'img/IMG18_sm.webp' %}"
+          type="image/webp"
+        />
+        <img
+          src="{% static 'img/IMG18.jpg' %}"
+          alt="Tarpaulin tent"
+          loading="lazy"
+          width="300px"
+          height="300px"
+        />
       </picture>
     </div>
   </div>
