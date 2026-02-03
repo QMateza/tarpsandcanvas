@@ -1,10 +1,13 @@
 {% extends 'main.html' %} {% load static %} {% block content %}
 <div class="hidden"><p>.</p></div>
+{% if name%} {% for msg in messages %}
+<p class="toast">Hey, {{name}}. {{msg}}</p>
+{%endfor%} {% endif %}
 <section class="flex-hero-section">
   <div class="flex-hero-section-wrapper width-sz">
     <div class="flex-hero-section-wrapper-text">
-      <h1>Let's get in touch</h1>
-      <p>
+      <h1 class="fade-in-bottom">Let's get in touch</h1>
+      <p class="fade-in-bottom">
         Have a custom project in mind? Our team is ready to guide you, answer
         questions, and prepare tailored solutions. Contact us for quotes,
         specifications, or expert support.
@@ -26,13 +29,8 @@
   <main class="main_wrapper width-sz">
     <section class="form">
       <h3>Contact us</h3>
-      <form
-        action="contactform.php"
-        method="post"
-        class="form"
-        id="form"
-        novalidate
-      >
+      <form action="#" method="post" class="form" id="form" novalidate>
+        {% csrf_token %}
         <fieldset id="contact">
           <div id="fName" class="form-control input">
             <label for="full-name">Name</label>
@@ -68,12 +66,12 @@
           </div>
           <div class="form-control input">
             <label for="subject">Subject</label>
-            <input
-              type="text"
-              name="Subject"
-              id="subject"
-              placeholder="Subject"
-            />
+            <select name="subject" id="subject" class="selection">
+              <option value="select">Select subject</option>
+              <option value="help">Help</option>
+              <option value="info">Info</option>
+              <option value="quote">Get a quote</option>
+            </select>
             <!-- <div class="errorMessage"></div> -->
           </div>
           <div class="form-control textarea">

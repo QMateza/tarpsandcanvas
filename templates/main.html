@@ -30,13 +30,16 @@
       Tarp and Canvas - Affordable, heavy-duty tarps and canvas covers made for
       any industry or need.
     </title>
+    <script defer src="{% static 'js/main.js' %}"></script>
   </head>
   <body>
     <div class="page-wrapper">
+      <button id="back-to-top" class="back-to-top"><i class="fas fa-angle-double-up"></i></button>
       <header>
         <div class="header-wrapper">
-          <a href="/" class="logo-anchor">
-            <picture class="logo">
+          <div class="logo-container">
+            <a href="/" class="logo-anchor fade-in-bottom">
+              <picture class="logo">
               <source
                 media="(min-width: 768px)"
                 srcset="{% static 'img/logo01_med.webp' %}"
@@ -52,6 +55,8 @@
                 alt="Tarps and canvas logo"
               />
             </picture>
+          </div>
+            
           </a>
           <nav>
             <ul class="nav-links">
@@ -76,15 +81,11 @@
                 <a href="{% url 'contact' %}">Contact</a>
               </li>
             </ul>
-            <button
-              class="burger"
-              aria-label="Toggle navigation menu"
-              aria-expanded="false"
-              aria-controls="primary-menu"
-            >
-              <span class="line1"></span><span class="line2"></span
-              ><span class="line3"></span>
-            </button>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
             <a href="{% url 'contact' %}" class="cta">Request a quote</a>
           </nav>
         </div>
@@ -92,15 +93,21 @@
       {%block content%} {% endblock %}
     </div>
     <footer>
-      <div class="footer-wrapper">
+      <div class="footer-wrapper width-sz">
         <div class="footer-wrapper-logo">
           <picture>
             <source
-              media="(min-width: 768px)"
+              media="(min-width: 100px)"
               srcset="{% static 'img/logo01_sm_tint.webp' %}"
               type="image/webp"
             />
-            <img src="" alt="" />
+            <img
+              src="{% static 'img/logo01_sm_tint.png' %}"
+              alt="Tarps and canvas logo"
+              loading="lazy"
+              width="200"
+              height="200"
+            />
           </picture>
         </div>
         <div class="footer-wrapper-text">
@@ -143,8 +150,16 @@
           </article>
           <div class="footer-wrapper-socials">
             <h5>Socials</h5>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://web.facebook.com/TarpsAndCanvas/?_rdc=1&_rdr#"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+27437436736&text=Hello"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -153,7 +168,7 @@
         <script>
           document.write(new Date().getFullYear());
         </script>
-        <noscript>2025</noscript>. Website by Q Mateza.
+        <noscript>2025</noscript>. Website developed by Q Mateza.
       </p>
     </footer>
   </body>
