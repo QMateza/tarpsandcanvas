@@ -1,7 +1,11 @@
 "use strict";
 
+import * as validation from "./formValidation.js";
+
 const scrollToTopBtn = document.getElementById("back-to-top");
 const burger = document.querySelector(".burger");
+const submitBtn = document.getElementById("submit-btn");
+const form = document.getElementById("form");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -80,6 +84,56 @@ function easeInOutCubic(t, b, c, d) {
   return (c / 2) * (t * t * t + 2) + b;
 }
 
+const formValidation = () => {
+  const name = document.getElementById("full_name").value;
+  const email = document.getElementById("emailBox").value;
+  const phone = document.getElementById("phoneBox").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+  let isFormValid = true;
+
+  if (!validation.elementLen(name, 3, 30)) {
+    document.querySelector("#fName .errorMessage").innerHTML =
+      "Please enter your full name";
+    isFormValid = false;
+  }
+
+  if (!validation.elementLen(email, 0, 30)) {
+    document.querySelector("#email .errorMessage").innerHTML =
+      "Please enter your email address";
+    isFormValid = false;
+  } else if (!validation.emailValidation(email)) {
+    document.querySelector("#email .errorMessage").innerHTML =
+      "Please enter the correct email address.";
+    isFormValid = false;
+  }
+
+  if (!validation.elementLen(phone, 0, 15)) {
+    document.querySelector("#phone .errorMessage").innerHTML =
+      "Please enter your phone number";
+    isFormValid = false;
+  } else if (!validation.phoneValidation(phone)) {
+    document.querySelector("#phone .errorMessage").innerHTML =
+      "Please enter the correct phone number";
+  }
+
+  if (subject.trim() === "select" || subject.trim === null) {
+    document.querySelector("#subjectBox .errorMessage").innerHTML =
+      "Please select the relevant subject";
+    isFormValid = false;
+  }
+
+  if (!validation.elementLen(message, 5, 1000)) {
+    document.querySelector("#messageBox .errorMessage").innerHTML =
+      "Please enter a message";
+    isFormValid = false;
+  }
+
+  if (isFormValid) {
+    form.submit();
+  }
+};
+
 function createEventListeners() {
   if (window.addEventListener) {
     burger.addEventListener("click", navSlide, false);
@@ -98,6 +152,12 @@ function createEventListeners() {
   } else if (window.attachEvent) {
     scrollToTopBtn.attachEvent("click", smoothScrollBackToTop);
   }
+
+  if (window.addEventListener) {
+    submitBtn.addEventListener("click", formValidation, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("click", formValidation);
+  }
 }
 
 function setupPage() {
@@ -109,3 +169,7 @@ if (window.addEventListener) {
 } else if (window.attachEvent) {
   window.attachEvent("load", setupPage);
 }
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});

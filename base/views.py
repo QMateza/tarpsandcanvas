@@ -20,6 +20,8 @@ def contact(request):
     subject = request.POST['subject']
     message = request.POST['message']
 
+    print("Form validation")
+
     #send an email
     send_mail(
       subject=subject, message=message, from_email=email, recipient_list=['qmateza@gmail.com'],
@@ -28,3 +30,6 @@ def contact(request):
     return render(request, 'contact.html', {'name':name})
   else:
     return render(request, 'contact.html')
+  
+  return render(request, 'contact.html')
+  

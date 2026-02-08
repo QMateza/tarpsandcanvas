@@ -40,9 +40,9 @@
               id="full_name"
               placeholder="Full Name"
             />
-            <!-- <div class="errorMessage"></div> -->
+            <div class="errorMessage"></div>
           </div>
-          <div class="form-control input">
+          <div id="email" class="form-control input">
             <label for="email">Email</label>
             <input
               type="email"
@@ -50,10 +50,9 @@
               id="emailBox"
               placeholder="Email Address"
             />
-            <p id="emailError" class="errorMsg"></p>
-            <!-- <div class="errorMessage"></div> -->
+            <div class="errorMessage"></div>
           </div>
-          <div class="form-control input">
+          <div id="phone" class="form-control input">
             <label for="contact-number">Phone</label>
             <input
               type="tel"
@@ -61,10 +60,9 @@
               id="phoneBox"
               placeholder="Contact Number"
             />
-            <p id="phoneError" class="errorMsg"></p>
-            <!-- <div class="errorMessage"></div> -->
+            <div class="errorMessage"></div>
           </div>
-          <div class="form-control input">
+          <div id="subjectBox" class="form-control input">
             <label for="subject">Subject</label>
             <select name="subject" id="subject" class="selection">
               <option value="select">Select subject</option>
@@ -72,9 +70,9 @@
               <option value="info">Info</option>
               <option value="quote">Get a quote</option>
             </select>
-            <!-- <div class="errorMessage"></div> -->
+            <div class="errorMessage"></div>
           </div>
-          <div class="form-control textarea">
+          <div id="messageBox" class="form-control textarea">
             <label for="message">Message</label>
             <textarea
               name="message"
@@ -83,9 +81,14 @@
               rows="10"
               placeholder="Message"
             ></textarea>
-            <!-- <div class="errorMessage"></div> -->
+            <div class="errorMessage"></div>
           </div>
-          <input type="submit" value="Submit" class="submit-btn cta" />
+          <input
+            type="submit"
+            value="Submit"
+            class="submit-btn cta"
+            id="submit-btn"
+          />
         </fieldset>
       </form>
     </section>
